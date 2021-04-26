@@ -19,3 +19,4 @@ bin-release/
 
 # 被Git忽略的文件
 test.ipynb
+Matrix测试.ipynb
