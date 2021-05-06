@@ -49,3 +49,13 @@
 > 添加了仿真课件进来
 > 
 > 修改了此MD文件
+
+## 2021.5.6 存档部分代码，主要是记录公式
+    if  2*np.pi*np.sqrt(M_i/K_i) > T_max:
+        T_max = 2*np.pi*np.sqrt(M_i/K_i)      # Try to find the best time step
+    if 2*np.pi*np.sqrt(M_i/K_i) < T_min:
+        T_min = 2*np.pi*np.sqrt(M_i/K_i)
+    if np.sqrt(K_i/M_i) < w_0:
+        w_0 = np.sqrt(K_i/M_i)
+
+print("\nMaximum   period :    T_0 =",T_max,"\nMinimum   period :    T_0 =",T_min,'\nMaximum angular speed:w_0 = ',w_0)
